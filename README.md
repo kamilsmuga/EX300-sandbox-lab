@@ -18,3 +18,7 @@ VMs created:
 ```dns.sh``` - OK, not only for caching. Hosts A and PTR records for:
 - tom.example.com - 10.0.0.5
 - jerry.example.com - 10.0.0.6
+
+# Central mail server
+``` mail.sh ``` - Postfix email server
+- hostname: mail.example.com

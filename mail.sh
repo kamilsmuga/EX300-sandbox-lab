@@ -4,7 +4,7 @@
 # author: kamilsmuga
 
 # postfix - install, enable on boot, start and add firewall rule
-#sudo -i
+sudo -i
 yum install -y postfix
 firewall-cmd --permanent --add-service=smtp
 firewall-cmd --reload

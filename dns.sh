@@ -18,8 +18,7 @@ yum install bind-utils -y
 UB_CONF=/etc/unbound/unbound.conf
 sed -i '0,/# interface/{s/# interface/interface/}' $UB_CONF
 # whitelist 10.0.0.0/24 subnet
-sed -i 's|# access-control: 0.0.0.0/0 refuse|access-control: 10.0.0.0/24 allow|'
-$UB_CONF
+sed -i 's|# access-control: 0.0.0.0/0 refuse|access-control: 10.0.0.0/24 allow|' $UB_CONF
 # set forward zone to google
 echo -e "forward-zone: \n \tname: . \n \tforward-addr: 8.8.8.8" >> /etc/unbound/unbound.conf
 

@@ -4,7 +4,9 @@ EX300-sandbox-lab
 EX300 - RHCE - RHEL 7 - study lab configuration scripts
 
 # Lab build
-Use Vagrantfile configuration to build desktop and server machines
+Install [Vagrant](https://www.vagrantup.com)
+
+Use ```Vagrantfile``` configuration file to build desktop and server machines:
 ```
 vagrant up
 ```

@@ -4,11 +4,11 @@
 # author: kamilsmuga
 
 # unbound - install, enable on boot, start and add firewall rule
-sudo -i
 yum -y install unbound
 systemctl enable unbound
 systemctl start unbound
 firewall-cmd --permanent --add-service=dns
+firewall-cmd --reload
 
 # I want dig!
 yum install bind-utils -y
@@ -32,4 +32,6 @@ echo local-data-ptr: \"10.0.0.5 tom.example.com\" >> $DNS_CONF
 echo local-data-ptr: \"10.0.0.6 jerry.example.com\" >> $DNS_CONF
 echo local-data-ptr: \"10.0.0.6 mail.example.com\" >> $DNS_CONF
 
+echo DNS1=10.0.0.6 >> /etc/sysconfig/network
 systemctl restart unbound
+

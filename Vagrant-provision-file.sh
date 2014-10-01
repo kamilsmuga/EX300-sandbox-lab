@@ -1,1 +1,1 @@
-yum -y install setroubleshoot-server
+yum -y install setroubleshoot-server setools-console

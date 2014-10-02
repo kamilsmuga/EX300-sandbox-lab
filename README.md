@@ -22,7 +22,7 @@ VMs created:
 - jerry.example.com <-> 10.0.0.6
 
 # Central mail server
-``` mail.sh ``` - Postfix email server - mail.example.com
+``` mail.sh ``` - postfix null client set up to forward email to main server - mail.example.com
 
 # NFS 
 ``` nfs-server.sh ``` - nfs kernel server - shares tom:/nfsshare(rw) with SELinux labels exported 

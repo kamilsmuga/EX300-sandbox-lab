@@ -33,3 +33,5 @@ VMs created:
 ``` smb-server.sh ``` - samba server configuration for multiuser mount
 
 ``` smb-client.sh ``` - samba client - mounts //tom/smbshare
+# iscsi
+``` iscsi-target.sh ``` - iscsi target - iqn.2014-10.example.com:jerry

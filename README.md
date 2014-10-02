@@ -35,3 +35,4 @@ VMs created:
 ``` smb-client.sh ``` - samba client - mounts //tom/smbshare
 # iscsi
 ``` iscsi-target.sh ``` - iscsi target - iqn.2014-10.example.com:jerry
+``` iscsi-initiator.sh ``` - iscsi initiator 
